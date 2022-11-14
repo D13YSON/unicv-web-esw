@@ -36,8 +36,8 @@ class UsuariosController extends Controller
         $validation = Validator::make($request->all(), [
             'nome'  => 'required|min:3|max:120',
             'email'      => 'required|email|min:0',
-            'idade' => 'required|numeric|min:1',
-            'telefone' => 'required|numeric'
+            'idade' => 'required|numeric|min:1|max:3',
+            'telefone' => 'required|numeric|max:11'
         ], [], ['nome' => 'nome', 'email' => 'email', 'idade' => 'idade', 'telefone' => 'telefone']);
 
         if ($validation->fails()) {

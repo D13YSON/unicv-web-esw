@@ -22,6 +22,7 @@
             <th>Email</th>
             <th>Idade</th>
             <th>Telefone</th>
+            <th>Opções</th>
         </tr>
     </thead>
         <tbody>
